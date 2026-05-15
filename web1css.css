@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    margin: 0px;
+}
+
+#head,#navi,#maintext,.footer{
+    width: 1900px;
+}
+
+#head{
+    background-color: aqua;
+    padding: 5px 10px 5px 20px;
+}
+#head h1{
+    color: blue;
+    text-decoration:double underline;
+    font-size: 40px;
+}
+#head h4{
+    color: green;
+    font-size: 20px;
+}
+#head h5{
+    position: relative;
+    top: -50px;
+    color: red;
+    font-size: 15px;
+    float: right;
+}
+
+#navi{
+    background-color: rgba(119, 119, 119, 0.85);
+    padding: 10px;
+    height: 50px;
+    margin-top: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+#navi a{
+    display: inline-block;
+    margin-right: 10px ;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#navi p{
+    margin-right: 10px ;
+    position: relative;
+    top: -13px;
+    color: white;
+    font-size: 20px;
+}
+
+#maintext{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+#maintext h2{
+    color: blue;
+    text-decoration: underline;
+}
+#maintext p{
+    color: black;
+    font-size: 20px;
+}
+#sectionA{
+    padding: 20px;
+    margin-top: 20px;
+}
+#images{
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: "A B C"
+                         "D h E"
+                         "c F g";
+    grid-gap: 5px;
+}
+#images img{
+    width: 400px;
+    height: auto;
+    margin: 0px;
+    margin-top: 20px;
+}
+#A{
+    grid-area: A;
+    border: 5px outset grey;
+}
+#A:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#B{
+    grid-area: B;
+    border: 5px outset grey;
+}
+#B:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#C{
+    grid-area: C;
+    border: 5px outset grey;
+}
+#C:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#D{
+    grid-area: D;
+    border: 5px outset grey;
+}
+#D:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#E{
+    grid-area: E;
+    border: 5px outset grey;
+}
+#E:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#F{
+    grid-area: F;
+    border: 5px outset grey;
+}
+#F:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#G{
+    grid-area: h;
+    border: 5px outset grey;
+    opacity: 0;
+}
+#G:hover{
+    scale: 1.03;
+    border: 5px solid black;
+}
+#btn{
+    grid-area: h;
+    width: 400px;
+    height: 200px;
+    margin-top: 50px;
+    background-color: lightblue;
+    border: 10px inset grey;
+    font-size: 20px;
+}
+#btn:hover{
+    background-color: lightcyan;
+    scale: 1.1;
+    border: 10px solid black;
+    font-size: 30px;
+}
+#modalBg{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 20;
+}
+#modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: grey;
+    padding: 20px;
+    border: 5px outset;
+    border-color: black white rgb(144, 143, 143) black;
+    width: 700px;
+    max-height: 500px;
+    min-height: 250px;
+}
+#modal p{
+    color: black;
+    top: 20%;
+    left: 6%;
+    max-width: 600px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    text-align: center;
+}
+#close{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(24, 24, 24);
+    width: 35px;
+    height: 34px;
+    text-align: center;
+}
+
+.footer{
+    background-color:aquamarine;
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer p {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 1</title>
+    <link rel="stylesheet" href="./web1css.css">
+    <script src="./web1js.js" defer></script>
+</head>
+<body onload="hideCatto()">
+    <header id="head">
+        <h1>Welcome to Web 1</h1>
+        <h4>Your journey starts here</h4>
+        <h5>The best way to start you'r programming life</h5>
+    </header>
+    <nav id="navi">
+        <a href="../web2/web2.html"><p>Web2</p></a>
+        <a href="#about"><p>About</p></a>
+        <a href="#contact"><p>Contact</p></a>
+    </nav>
+    <main id="maintext">
+        <sectionA id="what">
+            <h2>What we are</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </sectionA>
+        <sectionB id="services">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services to help you achieve your goals. Our team of experts is dedicated to providing you with the best possible experience.</p>
+            <br>
+            <p>Whether you're looking for web development, digital marketing, or any other service, we have you covered. Contact us today to learn more about how we can help you succeed.</p>
+        </sectionB>
+        <sectionC id="about">
+            <h2>About Us</h2>
+            <p>We are a team of passionate individuals who are dedicated to providing high-quality services to our clients. Our mission is to help businesses grow and succeed in the digital world.</p>
+        </sectionC>
+        <sectionI id="imageholder">
+            <h3>Just some images here</h3>
+            <div id="images">
+                <img src="./media cato/cato's logo.png" alt="logo" class="image" id="A" data-id="A">
+                <img src="./media cato/black cato.png" alt="black cato" class="image" id="B" data-id="B">
+                <img src="./media cato/cato look.png" alt="cato look" class="image" id="C" data-id="C">
+                <img src="./media cato/cato ready.png" alt="cato ready" class="image" id="D" data-id="D">
+                <img src="./media cato/cato stare.png" alt="cato stare" class="image" id="E" data-id="E">
+                <img src="./media cato/cato.png" alt="cato" class="image" id="F" data-id="F">
+                <img src="./media cato/catto_scary.png" alt="hidden_cato" class="image" id="G" data-id="G">
+                <input type="button" onclick="showCatto()" value="Show Hidden Catto" id="btn">
+            </div>
+        </sectionI>
+        <modalBg id="modalBg" data-id="modalBg">
+            <modal id="modal">
+            <span id="close" data-id="close">&times;</span>
+            <p id="modalText"></p>
+            </modal>
+        </modalBg>
+    </main>
+    <footer class="footer" id="contact">
+        <p>Footer lmao</p>
+        <p><b>Contact us:</b> <a href="mailto:info@company.com">info@company.com</a></p>
+        <p>bottom text</p>
+    </footer>
+    
+</body>
+</html>
