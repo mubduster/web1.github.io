@@ -1,4 +1,4 @@
-# WEB2
+# WEB1
 ______________________________________________________________________________
 
 This is just a basic static website that i am making as practice for my Edexcel IAL IT P2 exam.
